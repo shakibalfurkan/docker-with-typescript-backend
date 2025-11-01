@@ -4,10 +4,10 @@ import { createLogger, format, transports } from "winston";
 import DailyRotateFile from "winston-daily-rotate-file";
 const { combine, timestamp, label, printf } = format;
 
-//Customm Log Format
+//Custom Log Format
 
 const logFormat = printf(({ level, message, label, timestamp }) => {
-  const date = new Date(timestamp);
+  const date = new Date(timestamp as string);
   const hour = date.getHours();
   const minutes = date.getMinutes();
   const seconds = date.getSeconds();
