@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/mnt/DevZone/docker-with-typescript-backend/logs/winston/errors/.a4f5789e59ea1e1b9566353191cf1574cec030db-audit.json",
+    "files": [
+        {
+            "date": 1762187909659,
+            "name": "/mnt/DevZone/docker-with-typescript-backend/logs/winston/errors/docker-2025-11-03-22-error.log",
+            "hash": "0220beec29013133473b5991bf21f6834484f7c392f964f5d0a450101aea9457"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -2,7 +2,7 @@ import { Server } from "http";
 import mongoose from "mongoose";
 import app from "./app";
 import config from "./app/config";
-import { errorlogger, logger } from "./app/src/shared/logger";
+import { errorlogger, logger } from "./app/shared/logger";
 
 let server: Server;
 

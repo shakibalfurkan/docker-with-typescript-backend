@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/mnt/DevZone/docker-with-typescript-backend/logs/winston/successes/.8a5265d1cf98ce3e2ff99d2f8d67ebe576c6cb40-audit.json",
+    "files": [
+        {
+            "date": 1762187909657,
+            "name": "/mnt/DevZone/docker-with-typescript-backend/logs/winston/successes/docker-2025-11-03-22-38-29-success.log",
+            "hash": "5c919f2f524ecb85535b8c0a303cf93850446d446f1a0c853762f5894bcc0518"
+        }
+    ],
+    "hashType": "sha256"
+}
