@@ -2,6 +2,7 @@ import express, { Application, Request, Response } from "express";
 import path from "path";
 import { LogsRoutes } from "./app/modules/Logs/logs.routes";
 import { errorlogger } from "./app/shared/logger";
+import router from "./app/routes";
 
 const app: Application = express();
 
@@ -10,6 +11,15 @@ app.use(express.static(path.join(__dirname, "../public"))); // Adjusted path
 
 // Parsers
 app.use(express.json());
+
+app.use("/api/v1", router);
+
+app.get("/todos", async (req: Request, res: Response) => {
+  // const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+  const response = await fetch("http://ts-docker-container:5000/api/v1/users");
+  const todos = await response.json();
+  return res.status(200).json(todos);
+});
 
 // Welcome route
 app.get("/", (req: Request, res: Response) => {
